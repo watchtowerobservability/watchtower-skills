@@ -1,0 +1,14 @@
+{
+  "name": "@watchtowerobservability/skills",
+  "version": "0.1.0",
+  "repository": { "type": "git", "url": "git+https://github.com/watchtowerobservability/watchtower-skills.git" },
+  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "description": "Watchtower agent skills for Claude Code, Cursor, Codex and Gemini (plain JavaScript)",
+  "main": "src/install.js",
+  "types": "src/install.d.ts",
+  "bin": { "watchtower-skills": "bin/watchtower-skills.js" },
+  "files": ["bin", "src", "skills"],
+  "license": "Apache-2.0",
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/*.test.js" }
+}
