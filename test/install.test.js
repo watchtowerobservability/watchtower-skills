@@ -9,10 +9,10 @@ const { install, loadSkills, BEGIN, END } = require('../src/install.js');
 
 const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'wt-skills-'));
 
-test('bundles the four skills with names matching their directories', () => {
+test('bundles the five skills with names matching their directories', () => {
   const names = loadSkills().map((s) => s.name);
   assert.deepStrictEqual(names, [
-    'watchtower-debug-issue', 'watchtower-query', 'watchtower-setup', 'watchtower-write-alerts',
+    'watchtower-activity', 'watchtower-debug-issue', 'watchtower-query', 'watchtower-setup', 'watchtower-write-alerts',
   ]);
   for (const s of loadSkills()) assert.match(s.raw, new RegExp(`^---\\nname: ${s.name}\\n`));
 });
@@ -20,7 +20,7 @@ test('bundles the four skills with names matching their directories', () => {
 test('claude gets one SKILL.md per skill', () => {
   const d = tmp();
   const files = install('claude', d);
-  assert.strictEqual(files.length, 4);
+  assert.strictEqual(files.length, 5);
   assert.ok(fs.existsSync(path.join(d, '.claude/skills/watchtower-setup/SKILL.md')));
 });
 

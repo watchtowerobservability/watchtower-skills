@@ -1,7 +1,8 @@
 # Watchtower agent skills
 
-Four skills that teach coding agents to use Watchtower: `watchtower-setup`, `watchtower-debug-issue`,
-`watchtower-write-alerts` and `watchtower-query`. They drive the read-only `wtctl agent inspect` commands
+Five skills that teach coding agents to use Watchtower: `watchtower-setup`, `watchtower-debug-issue`,
+`watchtower-write-alerts`, `watchtower-query` and `watchtower-activity` (add a customer-facing activity
+log: record events, mint viewer sessions, and show the log embedded or in the app's own components). They drive the read-only `wtctl agent inspect` commands
 and the Watchtower MCP server; they never print or store a key.
 
 ## Install

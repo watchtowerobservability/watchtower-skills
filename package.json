@@ -2,7 +2,10 @@
   "name": "@watchtowerobservability/skills",
   "version": "0.1.0",
   "repository": { "type": "git", "url": "git+https://github.com/watchtowerobservability/watchtower-skills.git" },
-  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "description": "Watchtower agent skills for Claude Code, Cursor, Codex and Gemini (plain JavaScript)",
   "main": "src/install.js",
   "types": "src/install.d.ts",
