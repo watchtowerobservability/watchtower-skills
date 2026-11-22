@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 0.1.1
+
+- Sync with the monorepo: Hermetica write-up follow-ups.
 
 - `watchtower-activity` skill: record activity events, mint viewer sessions, and build the log UI (embedded `<wt-activity>` with framework wrappers, or app-native components over the feed API).
 

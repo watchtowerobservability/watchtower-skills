@@ -53,7 +53,7 @@ Source of truth for the commands: `plugins/claude-code/` and `go/wtctl/agent.go`
 
 ## Verify a release
 
-`gh attestation verify watchtowerobservability-skills-0.1.0.tgz --repo watchtowerobservability/watchtower-skills`
+`gh attestation verify watchtowerobservability-skills-0.1.1.tgz --repo watchtowerobservability/watchtower-skills`
 
 ## License
 
